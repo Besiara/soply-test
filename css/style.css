@@ -1,0 +1,676 @@
+ul {margin:0; padding:0;}
+.hidden {display: none;}
+.relative {position: relative; display: inline-block;}
+.margin-bottom{margin-bottom: 30px;}
+/*HEADER*/
+#header {
+    z-index: 1;
+    position: relative;
+}
+header {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    width: 100%;
+    background: black;
+}
+header nav {
+    text-align: right;
+}
+header h2 {
+    margin: 15px 0 15px 60px;
+    padding: 0;
+    width: 116px;
+    height: 78px;
+}
+
+header nav ul {
+    margin-top: 30px;
+    margin-right: 60px;
+    padding: 0;
+}
+header nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    list-style: none;
+}
+header nav ul li.sign-up {
+    border: solid 3px #fff;
+    border-radius: 2px;
+}
+header nav ul li a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+header nav ul li a:hover, header nav ul li a:active,header nav ul li a:focus, header nav ul li a:link  {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*SECTIONS*/
+
+
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-bottom: solid 1px #ccc;
+}
+.section-headline-text {
+    margin-bottom: 60px;
+    color: #a39693;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.35;
+}
+
+section.customers-partners ul li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+section h3 {
+    margin-bottom: 10px;
+    color: #4a4f55;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section h3 a {
+    border-bottom: solid 2px #4a4f55;
+    color: #4a4f55;
+    transition: all 0.5s;
+}
+
+section h3 a:hover {
+    border-bottom: solid 2px #4a4f55;
+    color: #4a4f55;
+    text-decoration: none;
+}
+section.customers-partners ul li img {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-margin {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*SECTION Featured Creatives*/
+
+section.curated-photographers {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #f0f0f0;
+}
+
+section.curated-photographers h3 {
+    padding: 0;
+    margin-bottom: 10px;
+    color: #4a4f55;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.curated-photographers h3 a {
+    border-bottom: solid 2px #4a4f55;
+    color: #4a4f55;
+    transition: all 0.5s;
+}
+
+section.curated-photographers h3 a:hover {
+    border-bottom: solid 2px #4a4f55;
+    color: #4a4f55;
+    text-decoration: none;
+}
+
+
+section.curated-photographers .section-headline-text {
+    margin-bottom: 60px;
+    color: #a39693;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+section.curated-photographers .curated-photograhers-card {
+    margin-bottom: 40px;
+    border-radius: 2px;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photograhers-card__photo img {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 100%;
+    height: auto;
+    /* min-height: 245px; */
+    background-color: #b7b7b7;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photographers-card__profile {
+    display: table;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: solid 1px #b7b7b7;
+    border-left: solid 1px #b7b7b7;
+    border-right: solid 1px #b7b7b7;
+    width: 100%;
+    background-color: #fff;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photographers-card__profile .curated-photograhers-card__profile__photo {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+    width: 66px;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photographers-card__profile .curated-photograhers-card__profile__photo img {
+    border-radius: 100%;
+    width: 46px;
+    height: 46px;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photographers-card__profile .curated-photographers-card__profile__text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photographers-card__profile .curated-photographers-card__profile__text h4 {
+    margin-bottom: 2px;
+    color: #262626;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photographers-card__profile .curated-photographers-card__profile__text .curated-photographers-card__profile__text--location {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photographers-card__profile .curated-photographers-card__profile__text--hire {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+section.curated-photographers .curated-photograhers-card .curated-photographers-card__profile .curated-photographers-card__profile__text--hire a {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid 1px #197b30;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #00a651;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.curated-photographers-card__tag {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 20px;
+    border-bottom: solid 1px #b7b7b7;
+    border-left: solid 1px #b7b7b7;
+    border-right: solid 1px #b7b7b7;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../img/tag.png);
+    background-size: 45px 16px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    color: #5c5250;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section.curated-photographers .see-more-photographers {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.curated-photographers .see-more-photographers a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px;
+    background-color: #262626;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.curated-photographers .see-more-photographers a:hover {
+    text-decoration: none;
+}
+
+
+section.curated-photographers .curated-photograhers-card {
+    margin-bottom: 40px;
+    border-radius: 2px;
+    min-height: 164px;
+}
+
+/*SECTION PRODUCTS*/
+section.products {
+    text-align: center;
+}
+
+section.products h4 {
+    margin-bottom: 30px;
+    color: #ff4539;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section.products img {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+section.products p {
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 66px;
+}
+
+section.products a {
+    display: block;
+    color: #999;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+section.products a:hover {
+    color: #555;
+    text-decoration: none;
+}
+
+
+
+/*SECTION HOW IT WORKS*/
+
+section.how-it-works {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-bottom: solid 1px #ccc;
+}
+
+section.how-it-works h3 {
+    color: #555;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.how-it-works .section-headline-text {
+    margin-bottom: 40px;
+    color: #a39693;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.how-it-works .how-it-works__image {
+    margin-top: -30px;
+    margin-bottom: -15px;
+    text-align: center;
+}
+
+section.how-it-works .how-it-works__image img {
+    width: 200px;
+    height: 200px;
+}
+
+section.how-it-works .big-number {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #a39693;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.how-it-works .how-it-works__text-1 {
+    color: #ff4539;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.how-it-works .how-it-works__text-2 {
+    margin-top: -5px;
+    color: #9fa5ac;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.how-it-works .how-it-works__text-3 {
+    margin-top: 80px;
+    color: #a7a089;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.how-it-works .how-it-works__text-3 a {
+    color: #a7a089;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+section.how-it-works .how-it-works__text-3 a:hover {
+    color: #4a4f55;
+}
+.profileLink:hover, .profileLink:active,.profileLink:focus {
+    text-decoration: none;
+}
+
+
+/*REQUEST SECTION*/
+section.request {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    border-bottom: solid 1px #ccc;
+    color: #555;
+    background-color: #f0f0f0;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+section.request .hero-form__location {
+    display: inline-block;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    width: 240px;
+    background-color: #fff;
+    text-align: left;
+    background-position: center right;
+    background-size: 30px 16px;
+    background-repeat: no-repeat;
+}
+
+section.request .geosuggest__input {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 40px;
+}
+.search-ico {
+    background-image: url(../img/search.png);
+    background-position: center right;
+    background-size: 30px 16px;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top:0;
+    right:5px;
+    cursor: pointer;
+}
+.geosuggest.locations {
+    display:inline-block;
+    position: relative;
+}
+.fullForm {
+    padding-top: 60px;
+}
+.confirm {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #197b30;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #00a651;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.confirm:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.confirm.go-back {
+    border: solid 1px #888;
+    background-color: #999;
+}
+
+.input {
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: 0;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.15s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 40px;
+    border-radius: 2px;
+    width: 180px;
+    background-color: #fff;
+    background-image: url(../img/down-grey.png);
+    background-size: 26px 8px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    color: #555;
+}
+
+
+.fullForm .input-budget {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 15px;
+    width: 100%;
+    background-image: url(../img/sterling.png);
+    background-position: center left;
+    background-size: 26px 16px;
+    background-repeat: no-repeat;
+    color: #443e3d;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fullForm h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #4a4f55;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 6px;
+    text-align: left;
+}
+.fullForm .input-contact {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    background-position: center left;
+    background-size: 26px 16px;
+    background-repeat: no-repeat;
+    color: #443e3d;
+    font-size: 15px;
+    font-weight: 600;
+}
+/*SECTION WHY LOVE IT*/
+section.why p, section.why ul {
+    text-align: justify;
+    margin-top: 40px;
+    color: #a39693;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+section.why ul li {
+    list-style: none;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    color: #c7b299;
+    font-size: 15px;
+    font-weight: 600;
+}
+section.why ul li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/check@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*SECTION POSTS*/
+.post-wrapper {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    background-clip: padding-box;
+    border: 1px solid #eee;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+.post h2 a,.post h2 a:hover {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+/*FOOTER*/
+#footer {
+    padding: 30px;
+    text-align: center;
+    color: #F0F0F0;
+    background-color: #171717;
+}
+#footer * {
+    color: #F0F0F0;
+    font-weight: lighter;
+    font-size: 14px;
+}
+#footer .menu, #footer .social-links, #footer .attributions {
+    list-style: none;
+    padding: 0;
+}
+
+#footer .menu-item, #footer .social-link, #footer .attribution, #footer li {
+    display: inline-block;
+    margin: 0 0.4em;
+}
+
+#footer .social-links {
+    margin-bottom: 32px;
+}
+
+#footer .social-link {
+    background-image: url(../img/social-icons@2x.png);
+    background-size: 32px 160px;
+    width: 32px;
+    height: 32px;
+}
+
+#footer .social-link.facebook {
+    background-position: 0 0;
+}
+
+#footer .social-link.twitter {
+    background-position: 0 -32px;
+}
+
+#footer .social-link.instagram {
+    background-position: 0 -128px;
+}
+
+#footer .social-link.google-plus {
+    background-position: 0 -64px;
+}
+
+#footer .social-link.linkedin {
+    background-position: 0 -96px;
+}
+
+#footer .social-links a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+#footer .social-links span {
+    display: none;
+}
+
+#footer .attribution.stripe img {
+    width: 119px;
+}
+
+#footer .attribution.comodo-ssl img {
+    width: 114px;
+}
+
+#footer .margin-bottom {
+    margin-bottom: 32px;
+}
