@@ -1,18 +1,22 @@
 ul {margin:0; padding:0;}
 .hidden {display: none;}
 .relative {position: relative; display: inline-block;}
-.margin-bottom{margin-bottom: 30px;}
+.margin-bottom {margin-bottom: 30px;}
+.margin-top {margin-top: 30px;}
+textarea {width: 100%;}
+a:link {
+    text-decoration: none;
+}
 /*HEADER*/
 #header {
     z-index: 1;
     position: relative;
 }
 header {
-    /*position: absolute;
+    position: absolute;
     top: 0;
-    left: 0;*/
+    left: 0;
     width: 100%;
-    background: black;
 }
 header nav {
     text-align: right;
@@ -52,7 +56,34 @@ header nav ul li a:hover, header nav ul li a:active,header nav ul li a:focus, he
     color: #fff;
     text-decoration: none;
 }
+.popUpLink {
+background: none;
+border: none;
+padding: 0;
+font-size: 15px;
+font-weight: 600;
+color: #fff;
+}
+.popUpLink:focus {
+    outline: none;
+}
 
+.signInPopUp .modal-dialog{
+    border: solid 1px #ccc;
+    border-radius: 0;
+    margin-top: 15%;
+}
+.signInPopUp .modal-content {
+    border: 0;
+    border-radius: 0;
+    background-clip: border-box;
+}
+
+.center-block.confirm {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 /*SECTIONS*/
 
 
@@ -105,8 +136,119 @@ section.customers-partners ul li img {
     width: 100%;
     margin: 0 auto;
 }
-
-
+/*SECTION CONTENT PACKAGES*/
+section.content-packages {
+    background-color: #f0f0f0;
+}
+section.content-packages .content-packages__column {
+    margin-bottom: 30px;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+section.content-packages .content-packages__column .content-packages__column__header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: solid 3px #0072bc;
+}
+section.content-packages .content-packages__column .content-packages__column__body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fafafa;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+}
+section.content-packages .content-packages__column .content-packages__column__header h4 {
+    margin-bottom: 10px;
+    color: #0072bc;
+    font-size: 25px;
+    font-weight: 600;
+}
+section.content-packages .content-packages__column .content-packages__column__header span {
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+}
+section.content-packages .content-packages__column .content-packages__column__body ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+section.content-packages .content-packages__column .content-packages__column__body ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    color: #555;
+    font-size: 15px;
+    font-weight: 600;
+}
+section.content-packages .content-packages--form form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section.content-packages .content-packages--form form div {
+    margin-bottom: 15px;
+}
+section.content-packages .content-packages--form form div.budget {
+    margin-bottom: 30px;
+}
+section.content-packages .content-packages--form form div.submit {
+    margin-bottom: 0;
+    border-top: solid 1px #eee;
+}
+section.content-packages .content-packages--form form input[type="submit"] {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px #0072bc;
+    border-radius: 100px;
+    width: calc(100% - 60px);
+    background-color: #fff;
+    color: #0072bc;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.15s;
+}
+section.content-packages .content-packages__column .content-packages__column__footer a {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px #0072bc;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #0072bc;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.15s;
+}
+section.content-packages .content-packages__column .content-packages__column__footer a:hover {
+    background-color: #0072bc;
+    color: #fff;
+}
+section.content-packages .content-packages__column .content-packages__column__body ul li span {
+    color: #9d9d9d;
+}
+section.content-packages .content-packages--form {
+    margin-top: -1px;
+    border-bottom: solid 1px #eee;
+    overflow-y: hidden;
+    max-height: 0;
+}
+section.content-packages .content-packages__column .content-packages__column__footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 /*SECTION Featured Creatives*/
 
 section.curated-photographers {
@@ -318,8 +460,18 @@ section.products a:hover {
     text-decoration: none;
 }
 
-
-
+label.control-label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #4a4f55;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 6px;
+    text-align: left;
+}
+.nav-item {
+    width: 49%;
+}
 /*SECTION HOW IT WORKS*/
 
 section.how-it-works {
@@ -515,7 +667,9 @@ select {
     color: #555;
 }
 
-
+.dateGroup .form-group{
+    margin-bottom: 0;
+}
 .fullForm .input-budget {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -597,6 +751,131 @@ section.why ul li::before {
     color: #333;
     text-decoration: none;
     display: block;
+}
+/*SECTION INTRO*/
+#intro {
+    height: 900px;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: height 2s ease;
+    -moz-transition: height 2s ease;
+    -ms-transition: height 2s ease;
+    -o-transition: height 2s ease;
+    transition: height 2s ease;
+}
+
+#intro .hero {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background-color: transparent;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.va-container {
+    display: table;
+    width: 100%;
+}
+.hero {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: height 2s, background-image 0.2s;
+    -moz-transition: height 2s, background-image 0.2s;
+    -ms-transition: height 2s, background-image 0.2s;
+    -o-transition: height 2s, background-image 0.2s;
+    transition: height 2s, background-image 0.2s;
+}
+.hero .hero-text-2 {
+    margin-bottom: 5px;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.hero h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+/*#intro .video-js {
+    z-index: -100;
+    color: transparent;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background: url('/assets-2015/frame.optimized.progressive.jpg') 50% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#intro video {
+    -webkit-object-fit: cover;
+    -moz-object-fit: cover;
+    -o-object-fit: cover;
+    -ms-object-fit: cover;
+    object-fit: cover;
+    -webkit-object-position: 50% 35%;
+    -moz-object-position: 50% 35%;
+    -o-object-position: 50% 35%;
+    -ms-object-position: 50% 35%;
+    object-position: 50% 35%;
+    display: none;
+}
+
+#intro .video-js .vjs-error-display, .showcase--content .vjs-error-display, .showcase--content .vjs-control-bar {
+    display: none;
+}*/
+.va-container .va-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+#intro a.soply-button {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px #fff;
+    border-radius: 100px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.15s;
+    text-decoration: none;
+}
+#intro a.soply-button:hover {
+    text-decoration: none;
+}
+/*GET STARTED SECTION*/
+section.get-started a.soply-button {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px #0072bc;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #0072bc;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.15s;
 }
 
 /*FOOTER*/

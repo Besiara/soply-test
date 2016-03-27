@@ -4,6 +4,8 @@ import browserify from 'browserify';
 import babelify from 'babelify';
 import source from 'vinyl-source-stream';
 import concatCss from 'gulp-concat-css';
+import cleanCSS from 'gulp-clean-css';
+import uglify from 'gulp-uglify';
 
 gulp.task('react', () => {
     return browserify({
@@ -26,8 +28,9 @@ gulp.task('react', () => {
 });
 
 gulp.task('css', () => {
- return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css','css/style.css','node_modules/react-geosuggest/module/geosuggest.css'])
+ return gulp.src(['node_modules/react-date-picker/index.css','node_modules/bootstrap/dist/css/bootstrap.css','css/style.css','node_modules/react-geosuggest/module/geosuggest.css'])
         .pipe(concatCss("/css/style.css"))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('build'));
 });
 

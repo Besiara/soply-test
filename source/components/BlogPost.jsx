@@ -4,7 +4,6 @@ import * as ReactDOM from 'react-dom';
 import * as constants from '../constants';
 
 export class BlogPost extends React.Component{
-    state = {};
     propTypes: {
         data: React.PropTypes.array.isRequired
         }

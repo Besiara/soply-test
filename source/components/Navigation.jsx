@@ -28,9 +28,6 @@ export const Navigation = React.createClass({
                     <li>
                         <Link to="/blog" activeClassName={ACTIVE_ITEM}>Blog</Link>
                     </li>
-                    <li className="sign-up">
-                        <Link to="/signin"  activeClassName={ACTIVE_ITEM}>Sign In</Link>
-                    </li>
             </span>
         );
     }

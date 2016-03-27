@@ -10,7 +10,6 @@ import {Content} from './components/pages/Content';
 import {Creatives} from './components/pages/Creatives';
 import {Market} from './components/pages/Market';
 import {Blog} from './components/pages/Blog';
-import {SignIn} from './components/pages/SignIn';
 
 import * as constants from './constants';
 
@@ -23,7 +22,6 @@ ReactDOM.render(
             <Route path="market" component={Market}/>
             <Route path="creatives" component={Creatives}/>
             <Route path="blog" component={Blog}/>
-            <Route path="signin" component={SignIn}/>
         </Route>
     </Router>,
     document.getElementById(constants.APP_CONTAINER_ID)

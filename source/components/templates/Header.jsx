@@ -23,6 +23,11 @@ export class Header extends React.Component {
                                 <nav className="hidden-sm hidden-xs desktop-menu">
                                     <ul>
                                         <Navigation></Navigation>
+                                        <li className="sign-up">
+                                            <button type="button" className="popUpLink" data-toggle="modal" data-target="#myModal">
+                                                Sign In
+                                            </button>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>

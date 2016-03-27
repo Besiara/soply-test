@@ -53,8 +53,6 @@ let partners = [
 ];
 
 export class CustomersPartners extends React.Component{
-    state = {};
-
     constructor(props) {
         super(props);
     }

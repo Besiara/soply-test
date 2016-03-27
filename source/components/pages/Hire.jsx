@@ -3,9 +3,9 @@ import * as React from 'react';
 import {FeaturedCreatives} from '../FeaturedCreatives';
 import {HowItWorksHire} from '../HowItWorks';
 import {Request} from '../Request';
+import {Intro} from '../Intro';
 
 export class Hire extends React.Component {
-    state = {};
     
     constructor(props) {
         super(props);
@@ -14,6 +14,9 @@ export class Hire extends React.Component {
     render() {
         return (
             <div>
+                <Intro introBackground="https://soply.com/assets-2015/frame.optimized.progressive.jpg"
+                       introHeader="Hire Professional Creatives"
+                       introSubHeader="Receive quotes and select your favorite"/>
                 <Request/>
                 <HowItWorksHire/>
                 <FeaturedCreatives

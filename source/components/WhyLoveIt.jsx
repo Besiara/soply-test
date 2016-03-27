@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 export class WhyLoveIt extends React.Component{
-    state = {};
 
     constructor(props) {
         super(props);

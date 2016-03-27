@@ -4,8 +4,6 @@ import * as ReactDOM from 'react-dom';
 import {Router, Link} from 'react-router';
 
 export class Products extends React.Component{
-    state = {};
-
     constructor(props) {
         super(props);
     }

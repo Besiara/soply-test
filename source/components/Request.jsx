@@ -2,18 +2,23 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import Geosuggest from '../../node_modules/react-geosuggest/module/Geosuggest.js';
+import {DateInputComponent, DateFormats } from "react-controlled-date-input";
 
 export class Request extends React.Component{
-    state = {};
-
     constructor(props) {
         super(props);
         this.state = {
             showForm: false,
             profession:"photographer",
             eventType:"event",
-            location:"Any location"
+            location:"Any location",
+            year: "",
+            month: "",
+            date: ""
         };
+    }
+    onDateChange(year, month, date) {
+        this.setState({ year, month, date });
     }
     setLocationToNull() {
         let input=this.refs.locationInput;
@@ -50,7 +55,7 @@ export class Request extends React.Component{
                                     <span className="hidden-sm-down">Request a</span>
                                     <select className="input js--input-profession valid"
                                             value={this.state.profession}
-                                            onChange={this.onProfessionChangeHandler}
+                                            onChange={(e)=>this.onProfessionChangeHandler(e)}
                                             name="creativeType">
                                         <option value="photographer">photographer</option>
                                         <option value="videographer">videographer</option>
@@ -61,8 +66,8 @@ export class Request extends React.Component{
                                     </select>
                                     <span className="hidden-sm-down">for an</span>
                                     <select className="input js--input-type valid"
-                                            value={this.state.profession}
-                                            onChange={this.onEventTypeChangeHandler}
+                                            value={this.state.eventType}
+                                            onChange={(e)=>this.onEventTypeChangeHandler(e)}
                                             name="briefType">
                                         <option value="marketing">marketing material</option>
                                         <option value="showreel">showreel</option>
@@ -102,9 +107,12 @@ export class Request extends React.Component{
                                     <div className="section-headline-text">
                                         <p>Great, you need a {this.state.profession} for an {this.state.eventType} in {this.state.location}.</p>
                                         <p>Please fill out these remaining details.</p>
-                                        <div className="col-md-3 col-md-offset-3">
+                                        <div className="col-md-3 col-md-offset-3 dateGroup">
                                             <h4>Date</h4>
-                                            <input type="text" className="input input-date js--hero-form__date" name="date" placeholder="As soon as possible" value="As soon as possible"/>
+                                            <DateInputComponent
+                                                className="input"
+                                                onChange={()=>this.onDateChange()}
+                                                dateFormat={DateFormats.DDMMYYYY}/>
                                         </div>
                                         <div className="col-md-3">
                                             <h4>Budget</h4>

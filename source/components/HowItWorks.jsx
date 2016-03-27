@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 export class HowItWorksHire extends React.Component{
-    state = {};
 
     constructor(props) {
         super(props);

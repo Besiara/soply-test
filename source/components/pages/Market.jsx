@@ -1,7 +1,9 @@
 import * as React from 'react';
 
+import {Intro} from '../Intro';
+import {ComingSoon} from '../ComingSoon';
+
 export class Market extends React.Component {
-    state = {};
 
     constructor(props) {
         super(props);
@@ -9,7 +11,12 @@ export class Market extends React.Component {
 
     render() {
         return (
-            <h1>Market</h1>
+            <div>
+                <Intro introBackground="https://soply.com/assets-2015/static/images/intro-market.compressed.optimized.jpg"
+                       introHeader="Buy Unique Visuals Directly From Creatives"
+                       introSubHeader="Browse, pay and download"/>
+                <ComingSoon/>
+            </div>
         );
     }
 }
